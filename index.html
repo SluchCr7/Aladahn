@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adahn</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="Images/app-development.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="containerCard">
+        <h1 class="title" id="title">Cairo</h1>
+        <!-- <span class="data" id="data">sep 2023 22</span> -->
+        <div class="data" id="data">
+            <span class="month" id="month"></span>
+            <span class="day" id="day"></span>
+        </div>
+        <div class="Cards grid grid-cols-3 xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-3 pt-[6rem] pb-[3rem] gap-4" id="CardsCont">
+            <div class="card" >
+                <span class="adan">الفجر</span>
+                <span class="time" id="First">5:00 AM</span>
+            </div>
+            <div class="card">
+                <span class="adan">الشروق</span>
+                <span class="time" id="sun_Shine">6:05 PM</span>
+            </div>
+            <div class="card" >
+                <span class="adan">الظهر</span>
+                <span class="time" id="Second">12:05 PM</span>
+            </div>
+            <div class="card" >
+                <span class="adan">العصر</span>
+                <span class="time" id="Third">3:21 PM</span>
+            </div>
+            <div class="card" >
+                <span class="adan">المغرب</span>
+                <span class="time" id="Fourth">5:49 PM</span>
+            </div>
+            <div class="card">
+                <span class="adan">العشاء</span>
+                <span class="time" id="Fifth">7:10 AM</span>
+            </div>
+        </div>
+        <div class="select_city">
+            <select name="City" id="DropdownFrom" class="select"></select>            
+            <!-- <select name="nation" id="sDropdownTo" class="select"></select> -->
+        </div>
+        <span class="copyright">© 2024 Aladhan. All rights reserved</span>
+    </div>
+    <!-- <script src="/node_modules/axios/dist/axios.min.js"></script> -->
+    <script src="/node_modules/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
